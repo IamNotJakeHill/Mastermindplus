@@ -1,7 +1,7 @@
 # Mastermindplus
 Unity project for app design workshop
 ## TODO 
-- [ ] base game with fixed amount of rows, columns and colors
+- [x] base game with fixed amount of rows, columns and colors
   - [x] placeholder graphics ingame
     - [x] placeholder buttons 
     - [x] placeholder board pin and slot
@@ -11,10 +11,10 @@ Unity project for app design workshop
     - [ ] wavy slow moving background
   - [ ] answer checking script (can probably scrap from another proj)
   - [ ] clue script (clue pin order must be randomized)
-  - [ ] main menu
+  - [x] main menu
     - [x] placeholder buttons 
     - [x] placeholder LOGO
-  - [ ] drag'n drop color picker
+  - [x] drag'n drop color picker
   - [ ] keyboard shortcut on color picker
   - [ ] pin drop/sprout animations
   - [ ] win/lose screen
