@@ -47,26 +47,15 @@ public class Dragging : MonoBehaviour
             if (Mathf.Abs(this.transform.position.x - correctForm.transform.GetChild(i).gameObject.transform.position.x) <= 1 &&
            Mathf.Abs(this.transform.position.y - correctForm.transform.GetChild(i).gameObject.transform.position.y) <= 1)
             {
-                this.transform.localPosition = new Vector2(resetPosition.x, resetPosition.y);
+                this.transform.position = new Vector2(resetPosition.x, resetPosition.y);
                 correctForm.transform.GetChild(i).gameObject.GetComponent<SpriteRenderer>().color = this.GetComponent<SpriteRenderer>().color;
                 break;
             }
 
         }
 
-        this.transform.localPosition = new Vector2(resetPosition.x, resetPosition.y);
+        this.transform.position = new Vector2(resetPosition.x, resetPosition.y);
 
-        //if (Mathf.Abs(this.transform.position.x - correctForm.transform.position.x) <= 2 &&
-        //   Mathf.Abs(this.transform.position.y - correctForm.transform.position.y) <= 2)
-        //{
-        //    //this.transform.position = new Vector2(correctForm.transform.position.x, correctForm.transform.position.y);
-        //    this.transform.localPosition = new Vector2(resetPosition.x, resetPosition.y);
-        //    correctForm.GetComponent<SpriteRenderer>().color = this.GetComponent<SpriteRenderer>().color;
-        //}
-        //else
-        //{
-            
-        //}
     }
 
     private void Update()
@@ -77,9 +66,9 @@ public class Dragging : MonoBehaviour
             mousePos = Input.mousePosition;
             mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
-            this.gameObject.transform.localPosition = new Vector2(mousePos.x - startPosX, mousePos.y - startPosY);
-            startPosX = mousePos.x - this.transform.localPosition.x;
-            startPosY = mousePos.y - this.transform.localPosition.y;
+            this.gameObject.transform.position = new Vector2(mousePos.x - startPosX, mousePos.y - startPosY);
+            startPosX = mousePos.x - this.transform.position.x;
+            startPosY = mousePos.y - this.transform.position.y;
 
             isDragging = true;
         }
