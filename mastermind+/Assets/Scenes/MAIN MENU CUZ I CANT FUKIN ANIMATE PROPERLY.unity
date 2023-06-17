@@ -1159,8 +1159,6 @@ GameObject:
   - component: {fileID: 1829602471}
   - component: {fileID: 1829602470}
   - component: {fileID: 1829602475}
-  - component: {fileID: 1829602468}
-  - component: {fileID: 1829602473}
   - component: {fileID: 1829602474}
   m_Layer: 0
   m_Name: turing pattern with clipping mask
@@ -1169,20 +1167,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1829602468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1829602467}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cafa861e12f585c46a345c769518c0cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ScrollX: 0.5
-  ScrollY: 0.5
 --- !u!222 &1829602470
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1263,21 +1247,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1829602473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1829602467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96a372f365536bd4aa3824ed7ae0159d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _img: {fileID: 1829602475}
-  _x: 0
-  _y: 0.2
 --- !u!223 &1829602474
 Canvas:
   m_ObjectHideFlags: 0
